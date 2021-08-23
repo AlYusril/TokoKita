@@ -101,6 +101,8 @@
                 android:id="@+id/textView44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
                 android:text="Pertanyaan Umum"
                 android:textColor="#000000"
                 android:textStyle="bold" />
@@ -112,11 +114,11 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
-                    android:layout_width="381dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -130,6 +132,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:paddingStart="5dp"
                             android:text="Apa itu Toko Kita Pos"
                             android:textColor="#000000" />
 
@@ -150,19 +153,19 @@
                 android:id="@+id/cvIsiExp1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible"
+                android:visibility="gone"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:id="@+id/layExpView1"
+                    android:id="@+id/layExpView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="visible">
 
                     <TextView
-                        android:id="@+id/textView48"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Toko Kita adalah mobile aplikasi Point of sales (POS) yang ditujukan untuk pelanggan segmen micro, small dan medium. Toko Kita merupakan POS yang di design agar dapat digunakan dengan mudah dan fleksible dalam penggunaannya." />
@@ -188,11 +191,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingStart="5dp"
                         android:text="Siapa Saja yang dapat menggunakan Toko Kita Pos"
                         android:textColor="#000000" />
 
                     <ImageView
-                        android:id="@+id/arrow1"
+                        android:id="@+id/arrow2"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -202,6 +206,30 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layExpView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pengguna Toko Kita Pos adalah pelaku bisnis dari segment micro, small dan medium." />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
@@ -219,11 +247,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingStart="5dp"
                         android:text="Apa yang menjadi keunggulan Toko Kita Pos dibanding produk sejenis ?"
                         android:textColor="#000000" />
 
                     <ImageView
-                        android:id="@+id/arrow1"
+                        android:id="@+id/arrow3"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -233,6 +262,30 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Toko Kita di design mudah dan simple, hal ini menjadi keunggulan Bonum dibanding aplikasi Pos lainnya" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
@@ -250,16 +303,39 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingStart="5dp"
                         android:text="Sudah berapa banyak yang menggunakan Toko Kita Pos"
                         android:textColor="#000000" />
 
                     <ImageView
-                        android:id="@+id/arrow1"
+                        android:id="@+id/arrow4"
                         android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saat ini Toko Kita Pos sudah di implementasikan di UMKM2 di seluruh Indonesia" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -267,7 +343,9 @@
                 android:id="@+id/textView46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
                 android:text="Kategori"
                 android:textColor="#000000"
                 android:textStyle="bold" />
@@ -284,8 +362,10 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                    android:id="@+id/btnBantuanMenuJualan"
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
+                    android:onClick="btnBantuanMenuJualan"
                     android:orientation="horizontal">
 
                     <ImageView
