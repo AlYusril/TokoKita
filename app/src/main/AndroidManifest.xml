@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alyusril.tokokita">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TokoKita">
+        <activity android:name=".PelangganActivity"></activity>
+        <activity android:name=".TambahKategoriActivity" />
+        <activity android:name=".MasukkanKategoriActivity" />
+        <activity android:name=".SimpanTransaksiActivity" />
+        <activity android:name=".BottomNav" />
+        <activity android:name=".PalingLaris" />
+        <activity android:name=".LaporanPenjualan" />
+        <activity android:name=".Laporan" />
+        <activity android:name=".BarangTerjual" />
+        <activity android:name=".Bantuan" />
+        <activity android:name=".TambahPelanggan" />
+        <activity android:name=".TambahPegawai" />
+        <activity android:name=".DataPelanggan" />
+        <activity android:name=".DataPegawai" />
+        <activity android:name=".KlaimVoucher" />
+        <activity android:name=".UpgradeAkun" />
+        <activity android:name=".GantiPin" />
+        <activity android:name=".Register" />
+        <activity android:name=".LupaPin" />
+        <activity android:name=".KelolaToko" />
+        <activity android:name=".UbahProfile" />
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
