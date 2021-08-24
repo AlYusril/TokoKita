@@ -29,7 +29,7 @@ public class Profile extends AppCompatActivity {
 
     public void load(){
         // Button
-        btnBackProfile = findViewById(R.id.btnClosePegawai);
+        btnBackProfile = findViewById(R.id.btnBackBantuanPJ);
         btnKeluar = findViewById(R.id.btnKeluar);
         btnUbahProfile = findViewById(R.id.btnUbahProfile);
         // CardView

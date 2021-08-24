@@ -32,7 +32,7 @@ public class UbahProfile extends AppCompatActivity {
     public void load(){
         tvTimeOpen = findViewById(R.id.tvTimeOpen);
         tvTimeClose = findViewById(R.id.tvTimeClose);
-        btnBack = findViewById(R.id.btnClosePegawai);
+        btnBack = findViewById(R.id.btnBackBantuanPJ);
         btnPerbarui = findViewById(R.id.btnUbahProfile);
     }
 

@@ -6,20 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".BantuanMenuJualan">
 
-    <ScrollView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnBackBantuanPJ"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:onClick="backBantuanPJ" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Bantuan Produk Jualan"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvExp1"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -36,7 +85,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -61,6 +110,8 @@
                 android:id="@+id/cvIsiExp1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -69,8 +120,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -85,7 +134,9 @@
                 android:id="@+id/cvExp2"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -102,7 +153,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -127,6 +178,8 @@
                 android:id="@+id/cvIsiExp2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -135,8 +188,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -151,7 +202,9 @@
                 android:id="@+id/cvExp3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -168,7 +221,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -193,6 +246,8 @@
                 android:id="@+id/cvIsiExp3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -201,8 +256,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -217,7 +270,9 @@
                 android:id="@+id/cvExp4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -234,7 +289,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -259,6 +314,8 @@
                 android:id="@+id/cvIsiExp4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -267,8 +324,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -283,7 +338,9 @@
                 android:id="@+id/cvExp5"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -300,7 +357,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -325,6 +382,8 @@
                 android:id="@+id/cvIsiExp5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -333,8 +392,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -349,7 +406,9 @@
                 android:id="@+id/cvExp6"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -366,7 +425,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -391,6 +450,8 @@
                 android:id="@+id/cvIsiExp6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -399,8 +460,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -415,7 +474,9 @@
                 android:id="@+id/cvExp7"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -432,7 +493,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -457,6 +518,8 @@
                 android:id="@+id/cvIsiExp7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -465,15 +528,13 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Saat ini Toko Kita memiliki metode pembayaran melalui integrasi dengan QRen. Anda cukup scan dan transaksi pun selesai, ini memudahkan bisnis anda. Selain itu Toko Kita tentu bisa menerima metode bayar secara tunai'/>
+                        android:text='Saat ini Toko Kita memiliki metode pembayaran melalui integrasi dengan QRen. Anda cukup scan dan transaksi pun selesai, ini memudahkan bisnis anda. Selain itu Toko Kita tentu bisa menerima metode bayar secara tunai' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -481,7 +542,9 @@
                 android:id="@+id/cvExp8"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -498,7 +561,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -523,6 +586,8 @@
                 android:id="@+id/cvIsiExp8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -531,8 +596,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -547,7 +610,9 @@
                 android:id="@+id/cvExp9"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -564,7 +629,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -589,6 +654,8 @@
                 android:id="@+id/cvIsiExp9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -597,8 +664,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -613,7 +678,9 @@
                 android:id="@+id/cvExp10"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -630,7 +697,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -655,6 +722,8 @@
                 android:id="@+id/cvIsiExp10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -663,8 +732,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -679,7 +746,9 @@
                 android:id="@+id/cvExp11"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -696,7 +765,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -721,6 +790,8 @@
                 android:id="@+id/cvIsiExp11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -729,8 +800,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -745,6 +814,8 @@
                 android:id="@+id/cvExp12"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:cardCornerRadius="2dp">
@@ -761,7 +832,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView45"
+                            android:id="@+id/isiTextVisible"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -786,6 +857,8 @@
                 android:id="@+id/cvIsiExp12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:visibility="gone"
@@ -794,8 +867,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 

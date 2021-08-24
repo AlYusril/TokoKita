@@ -10,8 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class BantuanMenuJualan extends AppCompatActivity {
-    ImageView arrow1, arrow2, arrow3, arrow4, arrow5, arrow6, arrow7, arrow8, arrow9, arrow10, arrow11, arrow12;
-    CardView cv1, isiCv1, cv2, isiCv2, cv3, isiCv3, cv4, isiCv4, cv5, isiCv5, cv6, isiCv6, cv7, isiCv7, cv8, isiCv8, cv9, isiCv9, cv10, isiCv10, cv11, isiCv11, cv12, isiCv12;
+    ImageView arrow1, arrow2, arrow3, arrow4, arrow5,
+            arrow6, arrow7, arrow8, arrow9, arrow10,
+            arrow11, arrow12;
+    CardView cv1, isiCv1, cv2, isiCv2, cv3, isiCv3, cv4, isiCv4, cv5,
+            isiCv5, cv6, isiCv6, cv7, isiCv7, cv8, isiCv8, cv9, isiCv9, cv10, isiCv10,
+            cv11, isiCv11, cv12, isiCv12;
 
 
     @Override
@@ -242,5 +246,9 @@ public class BantuanMenuJualan extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void backBantuanPJ(View view) {
+        onBackPressed();
     }
 }

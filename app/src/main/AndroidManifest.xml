@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TokoKita">
-        <activity android:name=".PelangganActivity"></activity>
-        <activity android:name=".BantuanMenuJualan"></activity>
+        <activity android:name=".BantuanAkunToko"></activity>
+        <activity android:name=".bantuanAkunToko" />
+        <activity android:name=".PelangganActivity" />
+        <activity android:name=".BantuanMenuJualan" />
         <activity android:name=".TambahKategoriActivity" />
         <activity android:name=".MasukkanKategoriActivity" />
         <activity android:name=".SimpanTransaksiActivity" />
@@ -31,7 +33,7 @@
         <activity android:name=".LupaPin" />
         <activity android:name=".KelolaToko" />
         <activity android:name=".UbahProfile" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Profile" />
         <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
