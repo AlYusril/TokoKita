@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 public class Profile extends AppCompatActivity {
 
     Button btnBackProfile, btnKeluar, btnUbahProfile;
-    CardView cvKelolaToko, cvGantiPin, cvUpgrade, cv;
+    CardView cvKelolaToko, cvGantiPin, cvUpgrade, cvBantuan;
     LinearLayout pilihToko;
 //    private BottomSheetBehavior bottomSheetBehavior;
 //    private BottomSheetDialog bottomSheetDialog;
@@ -37,7 +37,7 @@ public class Profile extends AppCompatActivity {
         cvKelolaToko = findViewById(R.id.cvKelolaToko);
         cvGantiPin = findViewById(R.id.cvGantiPin);
         cvUpgrade = findViewById(R.id.cvUpgradeAkun);
-        cv = findViewById(R.id.cvBantuan);
+        cvBantuan = findViewById(R.id.cvBantuan);
         // LinearLayout
         pilihToko = findViewById(R.id.layToko);
     }
@@ -89,10 +89,11 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        cv.setOnClickListener(new View.OnClickListener() {
+        cvBantuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this, BottomNav.class);
+                intent.putExtra("layout","bantuan");
                 startActivity(intent);
             }
         });

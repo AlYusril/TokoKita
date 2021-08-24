@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Switch;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,6 +23,25 @@ public class BottomNav extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.menu_bottom_nav);
         bottomNav.setOnItemSelectedListener(navListener);
+
+        String layout = getIntent().getStringExtra("layout");
+        switch (layout){
+            case "laporan" :
+                bottomNav.setSelectedItemId( R.id.btLaporan);
+                break;
+            case "bantuan":
+                bottomNav.setSelectedItemId(R.id.btBantuan);
+                break;
+            case "menuJualan" :
+                bottomNav.setSelectedItemId( R.id.btMenuJualan);
+                break;
+            case "hitungManual" :
+                bottomNav.setSelectedItemId( R.id.btHitungManual);
+                break;
+            default:
+
+        }
+
     }
 
     private BottomNavigationView.OnItemSelectedListener navListener = new BottomNavigationView.OnItemSelectedListener() {

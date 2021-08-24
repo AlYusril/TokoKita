@@ -43,10 +43,19 @@ public class Home extends AppCompatActivity {
 
     public void select(){
 
+        rincian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, LaporanPenjualan.class);
+                startActivity(intent);
+            }
+        });
+
         hitungManual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, BottomNav.class);
+                intent.putExtra("layout","hitungManual");
                 startActivity(intent);
             }
         });
@@ -55,20 +64,16 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, BottomNav.class);
+                intent.putExtra("layout","menuJualan");
                 startActivity(intent);
             }
         });
-        rincian.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Home.this, LaporanPenjualan.class);
-                startActivity(intent);
-            }
-        });
+
         laporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, BottomNav.class);
+                intent.putExtra("layout","laporan");
                 startActivity(intent);
             }
         });
@@ -76,6 +81,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, BottomNav.class);
+                intent.putExtra("layout","bantuan");
                 startActivity(intent);
             }
         });
