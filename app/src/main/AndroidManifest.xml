@@ -19,7 +19,6 @@
         <activity android:name=".BottomNav" />
         <activity android:name=".PalingLaris" />
         <activity android:name=".LaporanPenjualan" />
-        <activity android:name=".Laporan" />
         <activity android:name=".BarangTerjual" />
         <activity android:name=".Bantuan" />
         <activity android:name=".TambahPelanggan" />

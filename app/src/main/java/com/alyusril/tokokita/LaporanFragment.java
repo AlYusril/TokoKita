@@ -2,25 +2,21 @@ package com.alyusril.tokokita;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SimpanTransaksiFragment#newInstance} factory method to
+ * Use the {@link LaporanFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SimpanTransaksiFragment extends Fragment {
-
-    LinearLayout lay, lay2;
-    ImageButton ibt;
+public class LaporanFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,11 +26,8 @@ public class SimpanTransaksiFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Object rootView;
-    private Object findViewById;
-    private Object ImageButton;
 
-    public SimpanTransaksiFragment() {
+    public LaporanFragment() {
         // Required empty public constructor
     }
 
@@ -44,11 +37,11 @@ public class SimpanTransaksiFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SimpanTransaksiFragment.
+     * @return A new instance of fragment LaporanFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SimpanTransaksiFragment newInstance(String param1, String param2) {
-        SimpanTransaksiFragment fragment = new SimpanTransaksiFragment();
+    public static LaporanFragment newInstance(String param1, String param2) {
+        LaporanFragment fragment = new LaporanFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,51 +55,51 @@ public class SimpanTransaksiFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_simpan_transaksi, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_laporan, container, false);
 
-        ibt = v.findViewById(R.id.ibtPelanggan);
+        LinearLayout liL1 = (LinearLayout) rootView.findViewById(R.id.lapPenjualan);
+        LinearLayout liL2 = (LinearLayout) rootView.findViewById(R.id.cvBarangTerjual);
+        LinearLayout liL3 = (LinearLayout) rootView.findViewById(R.id.cvPalingLaris);
+        LinearLayout liL4 = (LinearLayout) rootView.findViewById(R.id.cvKasbon);
 
-        lay = v.findViewById(R.id.layMetodePembayaran);
-
-        lay2 = v.findViewById(R.id.layPembayaranKhusus);
-
-        lay.setOnClickListener(new View.OnClickListener() {
-
+        liL1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MetodePembayaranFragment metodePembayaranFragment = new MetodePembayaranFragment();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.container, metodePembayaranFragment);
-                transaction.commit();
-            }
-        });
-
-        ibt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),PelangganActivity.class);
+                Intent intent = new Intent(getActivity(), LaporanPenjualan.class);
                 startActivity(intent);
             }
         });
 
-        lay2.setOnClickListener(new View.OnClickListener() {
+        liL2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentPembayaranKhusus fragmentPembayaranKhusus = new FragmentPembayaranKhusus();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.container, fragmentPembayaranKhusus);
-                transaction.commit();
+                Intent intent = new Intent(getActivity(), BarangTerjual.class);
+                startActivity(intent);
             }
         });
 
-        return v;
+        liL3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PalingLaris.class);
+                startActivity(intent);
+            }
+        });
 
+        liL4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PalingLaris.class);
+                startActivity(intent);
+            }
+        });
+
+        return rootView;
     }
 }

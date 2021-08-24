@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 
 public class Home extends AppCompatActivity {
 
-    private CardView laporan, menuJualan, bantuan;
+    private CardView laporan, menuJualan, bantuan, hitungManual;
     private Button rincian;
 
 
@@ -32,6 +32,7 @@ public class Home extends AppCompatActivity {
         menuJualan = findViewById(R.id.cvMenuJualan);
         rincian = findViewById(R.id.rincian);
         bantuan = findViewById(R.id.cvBantuan);
+        hitungManual = findViewById(R.id.cvHitungManual);
 
     }
 
@@ -41,6 +42,14 @@ public class Home extends AppCompatActivity {
     }
 
     public void select(){
+
+        hitungManual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, BottomNav.class);
+                startActivity(intent);
+            }
+        });
 
         menuJualan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,14 +68,14 @@ public class Home extends AppCompatActivity {
         laporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Laporan.class);
+                Intent intent = new Intent(Home.this, BottomNav.class);
                 startActivity(intent);
             }
         });
         bantuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Bantuan.class);
+                Intent intent = new Intent(Home.this, BottomNav.class);
                 startActivity(intent);
             }
         });
