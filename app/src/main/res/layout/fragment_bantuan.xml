@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentPembayaranKhusus">
+    tools:context=".BantuanFragment">
 
-<include layout="@layout/pembayaran_khusus_sheet"
-android:id="@+id/tvSliding3"/>
+    <include layout="@layout/activity_bantuan"/>
+
 
 </FrameLayout>

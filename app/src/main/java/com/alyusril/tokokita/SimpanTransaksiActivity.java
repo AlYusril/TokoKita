@@ -30,6 +30,7 @@ public class SimpanTransaksiActivity extends AppCompatActivity {
             public void onPanelSlide(View panel, float slideOffset) {
                 findViewById(R.id.tvSliding).setAlpha(3 - slideOffset);
                 findViewById(R.id.tvSliding2).setAlpha(3 - slideOffset);
+                findViewById(R.id.tvSliding3).setAlpha(3 - slideOffset);
 
             }
 

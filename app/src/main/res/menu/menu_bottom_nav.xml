@@ -13,9 +13,11 @@
         android:icon="@drawable/ic_calculate"
         android:title="Hitung Manual" />
     <item
+        android:id="@+id/btLaporan"
         android:title="Laporan"
         android:icon="@drawable/ic_show_chart"/>
     <item
+        android:id="@+id/btBantuan"
         android:title="Bantuan"
         android:icon="@drawable/ic_help"/>
 </menu>

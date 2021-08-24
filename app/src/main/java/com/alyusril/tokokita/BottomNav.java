@@ -38,6 +38,12 @@ public class BottomNav extends AppCompatActivity {
                         case R.id.btHitungManual:
                             selectedFragment = new MainKalkulatorFragment();
                             break;
+                        case R.id.btLaporan:
+                            selectedFragment = new LaporanFragment();
+                            break;
+                        case R.id.btBantuan:
+                            selectedFragment = new BantuanFragment();
+                            break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, selectedFragment).commit();
 
