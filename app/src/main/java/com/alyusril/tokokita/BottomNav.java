@@ -32,6 +32,10 @@ public class BottomNav extends AppCompatActivity {
 
                     switch (item.getItemId()){
 
+                        case R.id.btBeranda:
+                            Intent intent = new Intent(BottomNav.this, Home.class);
+                            startActivity(intent);
+                            break;
                         case R.id.btMenuJualan:
                             selectedFragment = new MenuJualanFragment();
                             break;
