@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,6 +23,7 @@ public class BottomNav extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.menu_bottom_nav);
         bottomNav.setOnItemSelectedListener(navListener);
+
     }
 
     private BottomNavigationView.OnItemSelectedListener navListener = new BottomNavigationView.OnItemSelectedListener() {
