@@ -1,0 +1,14 @@
+package com.alyusril.tokokita;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class BantuanAkunToko extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bantuan_akun_toko);
+    }
+}
