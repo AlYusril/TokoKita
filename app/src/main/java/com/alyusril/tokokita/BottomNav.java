@@ -26,7 +26,7 @@ public class BottomNav extends AppCompatActivity {
 
     private BottomNavigationView.OnItemSelectedListener navListener = new BottomNavigationView.OnItemSelectedListener() {
                 @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                public boolean onNavigationItemSelected( MenuItem item) {
 
                     Fragment selectedFragment = null;
 

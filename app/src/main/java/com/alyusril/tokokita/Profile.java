@@ -2,6 +2,7 @@ package com.alyusril.tokokita;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.widget.LinearLayout;
 public class Profile extends AppCompatActivity {
 
     Button btnBackProfile, btnKeluar, btnUbahProfile;
-    CardView cvKelolaToko, cvGantiPin, cvUpgrade, cvBantuan;
+    CardView cvKelolaToko, cvGantiPin, cvUpgrade, cv;
     LinearLayout pilihToko;
 //    private BottomSheetBehavior bottomSheetBehavior;
 //    private BottomSheetDialog bottomSheetDialog;
@@ -36,7 +37,7 @@ public class Profile extends AppCompatActivity {
         cvKelolaToko = findViewById(R.id.cvKelolaToko);
         cvGantiPin = findViewById(R.id.cvGantiPin);
         cvUpgrade = findViewById(R.id.cvUpgradeAkun);
-        cvBantuan = findViewById(R.id.cvBantuan);
+        cv = findViewById(R.id.cvBantuan);
         // LinearLayout
         pilihToko = findViewById(R.id.layToko);
     }
@@ -87,10 +88,11 @@ public class Profile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        cvBantuan.setOnClickListener(new View.OnClickListener() {
+
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Profile.this, Bantuan.class);
+                Intent intent = new Intent(Profile.this, BottomNav.class);
                 startActivity(intent);
             }
         });

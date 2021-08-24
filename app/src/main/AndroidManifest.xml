@@ -20,7 +20,6 @@
         <activity android:name=".PalingLaris" />
         <activity android:name=".LaporanPenjualan" />
         <activity android:name=".BarangTerjual" />
-        <activity android:name=".Bantuan" />
         <activity android:name=".TambahPelanggan" />
         <activity android:name=".TambahPegawai" />
         <activity android:name=".DataPelanggan" />
