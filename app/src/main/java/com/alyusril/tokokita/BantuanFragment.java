@@ -84,6 +84,7 @@ public class BantuanFragment extends Fragment {
 
         //On Click CV
         CardView cvAkun = (CardView) rootView.findViewById(R.id.cvBantuanAkun);
+        CardView cvLaporan = (CardView) rootView.findViewById(R.id.cvBantuanLaporan);
 
         LinearLayout liL1 = (LinearLayout) rootView.findViewById(R.id.btnBantuanMenuJualan);
 
@@ -157,6 +158,14 @@ public class BantuanFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), BantuanAkunToko.class);
+                startActivity(intent);
+            }
+        });
+
+        cvLaporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), BantuanLaporan.class);
                 startActivity(intent);
             }
         });
