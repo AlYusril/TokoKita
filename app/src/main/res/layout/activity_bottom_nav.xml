@@ -20,7 +20,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
-        android:layout_width="422dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

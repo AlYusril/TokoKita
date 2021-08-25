@@ -19,7 +19,7 @@ public class GantiPin extends AppCompatActivity {
     }
 
     public void load(){
-        btnBack = findViewById(R.id.btnBackLupaPin);
+        btnBack = findViewById(R.id.btnBackRegister);
     }
 
     public void backSetBisnis(View view) {
