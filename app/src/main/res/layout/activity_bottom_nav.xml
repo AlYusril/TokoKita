@@ -35,6 +35,7 @@
             android:layout_alignParentBottom="true"
             android:background="@color/white"
             app:itemIconTint="@color/red"
+            app:itemActiveIndicatorStyle="@color/abuabu"
             app:itemTextColor="@color/black"
             app:menu="@menu/menu_bottom_nav" />
 
