@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnBackLupaPin"
+            android:id="@+id/btnBackRegister"
             android:layout_width="75dp"
             android:layout_height="30dp"
             android:layout_marginLeft="16dp"

@@ -3,56 +3,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginOwner">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_Pin"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_gravity="right"
-            android:backgroundTint="#FFFFFF"
-            android:onClick="btn_pin"
-            android:text="lupa PIN?"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textColorHint="@color/white"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/btnLoginOwner"
+        <LinearLayout
+            android:id="@+id/linearLayout8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="16dp"
-            android:onClick="loginOwner"
-            android:text="Login" />
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tvRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="tvRegister"
-            android:text="Tidak Punya Akun? Daftar Sekarang"
-            android:textAlignment="center" />
+            <Button
+                android:id="@+id/btn_Pin"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="right"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btn_pin"
+                android:text="lupa PIN?"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="16dp"
-            android:text="Atau login dengan akun media sosial"
-            android:textAlignment="center"
-            android:textSize="12sp" />
+            <Button
+                android:id="@+id/btnLoginOwner"
+                android:layout_width="359dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16dp"
+                android:onClick="loginOwner"
+                android:text="Masuk"
+                app:cornerRadius="10dp" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                >
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="Tidak Punya Akun?"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:onClick="tvRegister"
+                    android:text="Daftar Sekarang!"
+                    android:textColor="#4040ff"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:text="Atau login dengan akun media sosial"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <ImageButton
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_google" />
+
+
+            <ImageButton
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_facebook" />
+
+            <ImageButton
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_crying" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>

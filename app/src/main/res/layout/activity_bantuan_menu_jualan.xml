@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnBackLupaPin"
+            android:id="@+id/btnBackRegister"
             android:layout_width="75dp"
             android:layout_height="30dp"
             android:layout_marginLeft="16dp"
@@ -52,6 +52,7 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -866,5 +867,14 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvMenuJualan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
