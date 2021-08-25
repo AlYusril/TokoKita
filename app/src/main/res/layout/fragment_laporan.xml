@@ -291,7 +291,7 @@
                             android:layout_marginBottom="10dp"
                             android:layout_weight="1"
                             android:background="#ECB5B5"
-                            app:srcCompat="@drawable/ic_baseline_access_time_24" />
+                            app:srcCompat="@drawable/ic_jam_access_time_24" />
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
