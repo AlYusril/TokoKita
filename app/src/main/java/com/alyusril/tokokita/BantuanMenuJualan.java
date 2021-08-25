@@ -28,7 +28,7 @@ public class BantuanMenuJualan extends AppCompatActivity {
     }
 
     public void load() {
-        isiCv1 = findViewById(R.id.cvIsiExp1);
+        isiCv1 = findViewById(R.id.cvIsiAkun1);
         isiCv2 = findViewById(R.id.cvIsiExp2);
         isiCv3 = findViewById(R.id.cvIsiExp3);
         isiCv4 = findViewById(R.id.cvIsiExp4);
@@ -40,7 +40,7 @@ public class BantuanMenuJualan extends AppCompatActivity {
         isiCv10 = findViewById(R.id.cvIsiExp10);
         isiCv11 = findViewById(R.id.cvIsiExp11);
         isiCv12 = findViewById(R.id.cvIsiExp12);
-        arrow1 = findViewById(R.id.arrow1);
+        arrow1 = findViewById(R.id.arrowAkun);
         arrow2 = findViewById(R.id.arrow2);
         arrow3 = findViewById(R.id.arrow3);
         arrow4 = findViewById(R.id.arrow4);
@@ -52,7 +52,7 @@ public class BantuanMenuJualan extends AppCompatActivity {
         arrow10 = findViewById(R.id.arrow10);
         arrow11 = findViewById(R.id.arrow11);
         arrow12 = findViewById(R.id.arrow12);
-        cv1 = findViewById(R.id.cvExp1);
+        cv1 = findViewById(R.id.cvExpAkun1);
         cv2 = findViewById(R.id.cvExp2);
         cv3 = findViewById(R.id.cvExp3);
         cv4 = findViewById(R.id.cvExp4);

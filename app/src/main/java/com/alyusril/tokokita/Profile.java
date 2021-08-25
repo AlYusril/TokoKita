@@ -2,7 +2,6 @@ package com.alyusril.tokokita;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +29,7 @@ public class Profile extends AppCompatActivity {
 
     public void load(){
         // Button
-        btnBackProfile = findViewById(R.id.btnBackBantuanPJ);
+        btnBackProfile = findViewById(R.id.btnBackLupaPin);
         btnKeluar = findViewById(R.id.btnKeluar);
         btnUbahProfile = findViewById(R.id.btnUbahProfile);
         // CardView

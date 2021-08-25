@@ -11,7 +11,6 @@ import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -67,20 +66,25 @@ public class BantuanFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_bantuan, container, false);
 
-        CardView cv1 = (CardView) rootView.findViewById(R.id.cvExp1);
+        //Expandable View
+        CardView cv1 = (CardView) rootView.findViewById(R.id.cvExpAkun1);
         CardView cv2 = (CardView) rootView.findViewById(R.id.cvExp2);
         CardView cv3 = (CardView) rootView.findViewById(R.id.cvExp3);
         CardView cv4 = (CardView) rootView.findViewById(R.id.cvExp4);
 
-        ImageView iv1 = (ImageView) rootView.findViewById(R.id.arrow1);
+        ImageView iv1 = (ImageView) rootView.findViewById(R.id.arrowAkun);
         ImageView iv2 = (ImageView) rootView.findViewById(R.id.arrow2);
         ImageView iv3 = (ImageView) rootView.findViewById(R.id.arrow3);
         ImageView iv4 = (ImageView) rootView.findViewById(R.id.arrow4);
 
-        CardView cvIsi1 = (CardView) rootView.findViewById(R.id.cvIsiExp1);
+        CardView cvIsi1 = (CardView) rootView.findViewById(R.id.cvIsiAkun1);
         CardView cvIsi2 = (CardView) rootView.findViewById(R.id.cvIsiExp2);
         CardView cvIsi3 = (CardView) rootView.findViewById(R.id.cvIsiExp3);
         CardView cvIsi4 = (CardView) rootView.findViewById(R.id.cvIsiExp4);
+
+        //On Click CV
+        CardView cvAkun = (CardView) rootView.findViewById(R.id.cvBantuanAkun);
+        CardView cvLaporan = (CardView) rootView.findViewById(R.id.cvBantuanLaporan);
 
         LinearLayout liL1 = (LinearLayout) rootView.findViewById(R.id.btnBantuanMenuJualan);
 
@@ -146,6 +150,22 @@ public class BantuanFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), BantuanMenuJualan.class);
+                startActivity(intent);
+            }
+        });
+
+        cvAkun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), BantuanAkunToko.class);
+                startActivity(intent);
+            }
+        });
+
+        cvLaporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), BantuanLaporan.class);
                 startActivity(intent);
             }
         });

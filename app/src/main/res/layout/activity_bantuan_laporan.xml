@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BantuanMenuJualan">
+    tools:context=".BantuanLaporan">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar8"
+        android:id="@+id/toolbar12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
@@ -26,14 +26,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnBackLupaPin"
+            android:id="@+id/btnBackBantuanPJ"
             android:layout_width="75dp"
             android:layout_height="30dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/ic_baseline_arrow_back_24"
-            android:onClick="backBantuanPJ" />
+            android:onClick="backVip" />
 
         <TextView
             android:id="@+id/textView17"
@@ -42,7 +42,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:text="Bantuan Produk Jualan"
+            android:text="Bantuan Laporan"
             android:textAlignment="center"
             android:textColor="#020202"
             android:textSize="22sp"
@@ -50,12 +50,14 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="405dp"
+        android:layout_height="653dp"
+        android:layout_weight="1"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar8">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar12">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +65,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvExpAkun1"
+                android:id="@+id/cvExp1"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
@@ -71,7 +73,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -90,11 +92,11 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya menambahkan kategori produk ?"
+                            android:text="Bagaimana cara melihat laporan keuangan harian saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
-                            android:id="@+id/arrowAkun"
+                            android:id="@+id/arrow1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="16dp"
@@ -107,14 +109,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvIsiAkun1"
+                android:id="@+id/cvIsiExp1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,7 +128,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada halaman beranda klik menu "Produk" > klik "Tambah Kategori" > Ketik nama kategori sesuai yang diinginkan > Klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode Harian' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -138,7 +141,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -157,7 +160,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya mengganti nama kategori produk ?"
+                            android:text="Bagaimana cara melihat laporan keuangan mingguan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -181,7 +184,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -192,7 +196,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada Menu Jualan klik "Ubah" yang berada diatas pojok kanan > pilih kategori yang ingin anda ubah namanya > klik ikon titik tiga > klik "Ubah Kategori" > ketik nama Kategori yang baru > klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode Mingguan' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -205,7 +209,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -224,7 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya menambahkan produk jualan saya ?"
+                            android:text="Bagaimana cara melihat laporan keuangan bulanan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -248,7 +252,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -259,7 +264,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada Menu Jualan klik "Ubah" yang berada diatas pojok kanan > pilih Kategori yang anda tambahkan produknya > klik "Tambah produk" > beri nama produk berikut dengan harga dan gambarnya > klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode Bulanan' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -272,7 +277,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -291,7 +296,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya mengganti gambar pada produk jualan saya"
+                            android:text="Bagaimana cara membagikan laporan keuangan harian saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -315,7 +320,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -326,7 +332,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada Menu Jualan klik "Ubah" yang berada diatas pojok kanan > Pilih kategori yang ingin anda ganti gambar produknya > klik produk yang ingin diganti gambarnya > Klik pada logo kamera > pilih gambar yang anda inginkan bisa memlalui kamera atau galeri > klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode harian lalu klik "Bagikan" > tentukan kepada siapa anda ingin membagikan' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -339,7 +345,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -358,7 +364,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya mengganti nama pada produk jualan saya ?"
+                            android:text="Bagaimana cara membagikan laporan keuangan mingguan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -382,7 +388,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -393,7 +400,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada Menu Jualan klik "Ubah" yang berada diatas pojok kanan > pilih kategori yang ingin anda ganti nama produknya > klik produk yang ingin diganti namanya > hapus nama lama dan tuliskan nama baru > klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode mingguan lalu klik "Bagikan" > tentukan kepada siapa anda ingin membagikan' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -406,7 +413,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -425,7 +432,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana saya mengganti harga pada produk jualan saya ?"
+                            android:text="Bagaimana cara membagikan laporan keuangan bulanan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -449,7 +456,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -460,7 +468,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Pada Menu Jualan klik "Ubah" yang berada diatas pojok kanan > pilih kategori yang ingin anda ganti harga produknya > klik produk yang diganti harganya > hapus harga lama dan tuliskan harga baru > klik "Simpan"' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode bulanan lalu klik "Bagikan" > tentukan kepada siapa anda ingin membagikan' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -473,7 +481,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -492,7 +500,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Apa saja metode bayar pada aplikasi Toko Kita"
+                            android:text="Bagaimana cara mengunduh laporan keuangan harian saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -516,7 +524,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -527,7 +536,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Saat ini Toko Kita memiliki metode pembayaran melalui integrasi dengan QRen. Anda cukup scan dan transaksi pun selesai, ini memudahkan bisnis anda. Selain itu Toko Kita tentu bisa menerima metode bayar secara tunai' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode harian lalu klik "Unduh" > pilih format yang anda inginkan antara pdf atau excel' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -540,7 +549,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -559,7 +568,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="bagaimana jika saya ingin melakukan transaksi dengan QRen ?"
+                            android:text="Bagaimana cara mengunduh laporan keuangan mingguan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -583,7 +592,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -594,7 +604,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Sebelumnya anda perlu memiliki akun QRen pada aplikasi QRen, setelah nada memiliki akun QRen, maka ketika melakukan transaksi dan memilih metode pembayaran dengan QRen, maka otomatis akan dilarikan ke aplikasi QRen. setelah transaksi berhasil, transakai akan tersimpan di laporan keuangan.' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode mingguan lalu klik "Unduh" > pilih format yang anda inginkan antara pdf atau excel' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -607,7 +617,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -626,7 +636,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Bagaimana jika saya belum memiliki akun QRen ?"
+                            android:text="Bagaimana cara mengunduh laporan keuangan bulanan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -650,7 +660,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -661,7 +672,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Jika anda belum mempunyai akun QRen, anda perlu install terlebih dahulu aplikasi QRen kemudian lakukan registrasi akun.' />
+                        android:text='Pada halaman beranda klik "Lihat Rincian" dibawah total pemasukan > pilih periode bulanan lalu klik "Unduh" > pilih format yang anda inginkan antara pdf atau excel' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -674,7 +685,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -693,7 +704,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Berapa jumlah maksimal diskon yang bisa saya berikan ke pelanggan ?"
+                            android:text="Bagaimana saya dapat mengetahui laporan barang terjual harian saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -717,7 +728,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -728,7 +740,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Jumlah maksimal diskon adalah 99%, sedangkan minimum diskon adalah 1%. Jika terdapat desimal, maka nominal diskon akan dibulatkan ke bawah' />
+                        android:text='Pada halaman awal pilih menu "Laporan" > klik pilihan "Barang Terjual" > Pilih periode Harian' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -741,7 +753,7 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -760,7 +772,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Apakah bisa mengaktifkan diskon produk dan diskon transaksi sekaligus ?"
+                            android:text="Bagaimana saya dapat mengetahui laporan barang terjual mingguan saya?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -784,7 +796,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -795,7 +808,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Diskon produk adalah diskon yang berlaku spesifik ke satuan produk tertentu, sedangkan diskon transaksi adalah diskon yang berlaku pada total harga transaksi. Diskon produk dan diskon transaksi dapat diterapkan sekaligus di Toko Kita' />
+                        android:text='Pada halaman awal pilih menu "Laporan" > klik pilihan "Barang Terjual" > Pilih periode Mingguan.' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -804,10 +817,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -826,7 +840,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:text="Berapa maksimal pembeli bisa mencicil kasbon ?"
+                            android:text="Bagaimana saya dapat mengetahui laporan barang terjual bulanan saya ?"
                             android:textColor="#000000" />
 
                         <ImageView
@@ -850,7 +864,8 @@
                 android:layout_marginRight="16dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -861,10 +876,432 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Toko Kita saat ini tidak ada fitur untuk mencicil pembayaran kasbon, melainkan pembeli membayar lunas setelah membayar uang muka' />
+                        android:text='Pada halaman awal pilih menu "Laporan" > klik pilihan "Barang Terjual" > Pilih periode Bulanan.' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp13"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara membagikan laporan barang terjual harian saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow13"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode Harian > klik "Bagikan" > Tentukan pada siapa anda akan membagikan lalu bagikan' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp14"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara membagikan laporan barang terjual mingguan saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow14"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode Mingguan > klik "Bagikan" > Tentukan pada siapa anda akan membagikan lalu bagikan' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp15"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara membagikan laporan barang terjual bulanan saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow15"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode bulanan > klik "Bagikan" > Tentukan pada siapa anda akan membagikan lalu bagikan' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp16"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara mengunduh laporan barang terjual harian saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow16"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode Harian > klik "Unduh" > Pilih format pdf atau excel > klik "Unduh"' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp17"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara mengunduh laporan barang terjual mingguan saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow17"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode Mingguan > klik "Unduh" > Pilih format pdf atau excel > klik "Unduh"' />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExp18"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/isiTextVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:text="Bagaimana cara mengunduh laporan barang terjual bulanan saya ?"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:id="@+id/arrow18"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIsiExp18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='Pada halaman awal pilih menu "Laporan" > Klik pilihan "barang Terjual" > Pilih periode Bulanan > klik "Unduh" > Pilih format pdf atau excel > klik "Unduh"' />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBantuanLaporan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
