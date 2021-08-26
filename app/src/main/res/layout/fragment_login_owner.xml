@@ -96,29 +96,32 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
             <ImageButton
-                android:id="@+id/button7"
+                android:id="@+id/ivGoogle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
                 android:layout_weight="1"
-                android:background="@drawable/ic_google" />
+                android:background="@drawable/ic_google"
+                android:onClick="google" />
 
 
             <ImageButton
-                android:id="@+id/button11"
+                android:id="@+id/ivFacebook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
                 android:layout_weight="1"
-                android:background="@drawable/ic_facebook" />
+                android:background="@drawable/ic_facebook"
+                android:onClick="facebook" />
 
             <ImageButton
-                android:id="@+id/button11"
+                android:id="@+id/ivFacebook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
                 android:layout_weight="1"
-                android:background="@drawable/ic_crying" />
+                android:background="@drawable/ic_crying"
+                android:onClick="twitter" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -49,4 +49,8 @@ public class BantuanAkunToko extends AppCompatActivity {
         adapter = new CustomBantuanAkunAdapter(this,bantuanAkunList);
         rcv.setAdapter(adapter);
     }
+
+    public void backAkunToko(View view) {
+        onBackPressed();
+    }
 }
