@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TokoKita">
-        <activity android:name=".BantuanLaporan"></activity>
+        <activity android:name=".BantuanVIP"></activity>
+        <activity android:name=".BantuanLoketBayar" />
+        <activity android:name=".BantuanHitungManual" />
+        <activity android:name=".BantuanLaporan" />
         <activity android:name=".BantuanAkunToko" />
         <activity android:name=".bantuanAkunToko" />
         <activity android:name=".PelangganActivity" />

@@ -35,8 +35,8 @@
 
             <Button
                 android:id="@+id/btnLoginOwner"
-                android:layout_width="359dp"
-                android:layout_height="63dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="16dp"
