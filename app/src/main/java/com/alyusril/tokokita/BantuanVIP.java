@@ -30,13 +30,7 @@ public class BantuanVIP extends AppCompatActivity {
 
     public void isiData(){
         bantuanAkunList = new ArrayList<CustomBantuanAkun>();
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
+        bantuanAkunList.add(new CustomBantuanAkun("Apa saja yang bisa saya dapatkan dari membeli Voucher VIP", "Anda dapat kostum tampilan struk dengan merubah ikon, alamat toko, dan menghilangkan footer 'Powered by Toko Kita'"));
 
         adapter = new CustomBantuanAkunAdapter(this,bantuanAkunList);
         rcv.setAdapter(adapter);

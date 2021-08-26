@@ -30,13 +30,9 @@ public class BantuanHitungManual extends AppCompatActivity {
 
     public void isiData(){
         bantuanAkunList = new ArrayList<CustomBantuanAkun>();
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
-        bantuanAkunList.add(new CustomBantuanAkun("Apa itu menu jualan?", "Menu jualan adalah isi dari produk kita"));
+        bantuanAkunList.add(new CustomBantuanAkun("Bagaimana cara menggunakan kalkulator pada fitur hitung manual ?", "Pilih menu 'Hitung Manual' dihalaman awal lalu anda bisa langsung menggunakannya. Klik 'Simpan Transaksi' untuk memasukkan data ke laporan keuangan"));
+        bantuanAkunList.add(new CustomBantuanAkun("Apakah hitung manual datanya akan tersimpan pada laporan ?", "Tentu saja!, transaksi pada hitung manual akan tersimpan di laporan anda hanya harus Klik 'Simpan Transaksi' ketika anda telah menggunakan fitur hitung manual untuk memasukkannya ke laporan keuangan"));
+
 
         adapter = new CustomBantuanAkunAdapter(this,bantuanAkunList);
         rcv.setAdapter(adapter);
