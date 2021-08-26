@@ -82,7 +82,7 @@
             android:layout_marginStart="13dp"
             android:layout_marginEnd="14dp"
             android:background="@drawable/border_tambah_kategori"
-            android:onClick="btnSimpanKategori"
+            android:onClick="btnTambahKategori"
             android:text="Simpan"
             app:backgroundTint="#FF0000"
             app:cornerRadius="20dp" />

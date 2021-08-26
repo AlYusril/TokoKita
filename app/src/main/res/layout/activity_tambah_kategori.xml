@@ -39,6 +39,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="394dp"
         android:layout_height="55dp"
         android:layout_marginTop="70dp"
@@ -78,15 +79,28 @@
             app:srcCompat="@drawable/ic_search" />
     </RelativeLayout>
 
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+    </FrameLayout>
+
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="324dp"
         android:layout_height="361dp"
-        android:layout_marginTop="165dp"
         android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <TextView
             android:id="@+id/tvDescMenuJualan"
@@ -128,9 +142,10 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout4"
         android:layout_width="0dp"
         android:layout_height="75dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginBottom="8dp"
         android:bottomLeftRadius="100dp"
         android:bottomRightRadius="100dp"
         android:orientation="horizontal"
@@ -139,8 +154,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnTambahKategori"
@@ -149,9 +163,11 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="13dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="14dp"
+            android:layout_marginBottom="17dp"
             android:background="@drawable/border_tambah_kategori"
             android:onClick="btnTambahKategori2"
             android:text="Tambah Kategori"
