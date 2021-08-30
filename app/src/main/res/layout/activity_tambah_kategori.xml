@@ -79,28 +79,16 @@
             app:srcCompat="@drawable/ic_search" />
     </RelativeLayout>
 
-    <FrameLayout
-        android:id="@+id/fl_main"
-        android:layout_width="match_parent"
-        android:layout_height="525dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
-
-    </FrameLayout>
-
     <RelativeLayout
-        android:id="@+id/relativeLayout2"
+        android:id="@+id/rlGambar"
         android:layout_width="324dp"
         android:layout_height="361dp"
         android:orientation="horizontal"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvDescMenuJualan"
@@ -157,7 +145,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btnTambahKategori"
+            android:id="@+id/btnTambahKategori2"
             android:layout_width="384dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
