@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,5 +35,9 @@ public class BantuanVIP extends AppCompatActivity {
 
         adapter = new CustomBantuanAkunAdapter(this,bantuanAkunList);
         rcv.setAdapter(adapter);
+    }
+
+    public void backVip(View view) {
+        onBackPressed();
     }
 }
